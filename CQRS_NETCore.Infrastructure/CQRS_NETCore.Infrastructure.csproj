@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS_NET_CORE.Application\CQRS_NETCore.Application.csproj" />
+    <ProjectReference Include="..\CQRS_NET_CORE.Common\CQRS_NETCore.Common.csproj" />
+  </ItemGroup>
+
+</Project>

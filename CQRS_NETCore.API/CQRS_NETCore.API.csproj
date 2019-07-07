@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>a96df0c3-4acf-4a38-9419-e493e84faf4a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.4.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.11" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS_NETCore.Infrastructure\CQRS_NETCore.Infrastructure.csproj" />
+    <ProjectReference Include="..\CQRS_NETCore.Persistence\CQRS_NETCore.Persistence.csproj" />
+    <ProjectReference Include="..\CQRS_NET_CORE.Application\CQRS_NETCore.Application.csproj" />
+    <ProjectReference Include="..\CQRS_NET_CORE.Common\CQRS_NETCore.Common.csproj" />
+  </ItemGroup>
+
+</Project>
